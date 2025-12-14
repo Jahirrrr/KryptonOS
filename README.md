@@ -33,6 +33,23 @@ Panduan langkah demi langkah untuk memodifikasi Kali Linux menjadi sistem operas
 - Internet connection
 - ISO Kali Linux Live (official)
 
+## 📦 Install tools remaster ISO
+```bash
+sudo apt install -y \
+  xorriso \
+  squashfs-tools \
+  genisoimage \
+  isolinux \
+  syslinux-utils \
+  rsync \
+  wget \
+  curl \
+  unzip \
+  gzip \
+  nano \
+  tree
+```
+
 ## 📥 1. Download Kali Linux ISO
 
 Download Live ISO (not installer):

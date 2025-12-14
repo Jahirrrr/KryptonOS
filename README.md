@@ -63,13 +63,13 @@ sha256sum kali-linux-2025.x-live-amd64.iso
 
 ## 2. Prepare Working Directory
 ```bash
-mkdir -p ~/kali-remaster
-cd ~/kali-remaster
+mkdir -p ~/remaster-kali
+cd ~/remaster-kali
 ```
 
 Directory structure:
 ```bash
-kali-remaster/
+remaster-kali/
 ├── iso/            # mounted original ISO
 ├── edit_iso/       # ISO filesystem (editable)
 ├── squashfs/
@@ -94,7 +94,7 @@ sudo unsquashfs -d squashfs/edit edit_iso/live/filesystem.squashfs
 
 Bind system directories:
 ```bash
-EDIT=~/kali-remaster/squashfs/edit
+EDIT=~/remaster-kali/squashfs/edit
 
 sudo mount --bind /dev  $EDIT/dev
 sudo mount --bind /proc $EDIT/proc
